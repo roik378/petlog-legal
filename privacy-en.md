@@ -34,4 +34,5 @@ We implement industry-standard security measures. Your data is stored securely u
 * **PIPEDA (Canada):** We adhere to Canadian privacy principles regarding the collection and use of personal information.
 
 ## 6. Contact Us
-If you have questions about this policy, please contact us at: [Your Email Address]
+If you have questions about this policy, please contact us at: roik378@gmail.com
+
