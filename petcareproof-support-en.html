@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetCare Proof quick start, frequently asked questions, and contact details.">
+    <title>Support - PetCare Proof</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --canvas: #f4f1ed;
+            --paper: rgba(255, 253, 250, 0.94);
+            --ink: #292725;
+            --muted: #6f6a65;
+            --taupe: #918477;
+            --line: #ddd6cf;
+            --soft: #ebe6e1;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 32px 18px 56px;
+            background:
+                radial-gradient(circle at 88% 5%, rgba(197, 184, 174, 0.34), transparent 30rem),
+                var(--canvas);
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+            line-height: 1.72;
+        }
+        main {
+            width: min(100%, 860px);
+            margin: 0 auto;
+            padding: clamp(26px, 5vw, 52px);
+            background: var(--paper);
+            border: 1px solid rgba(145, 132, 119, 0.22);
+            border-radius: 28px;
+            box-shadow: 0 24px 70px rgba(66, 58, 52, 0.10);
+            backdrop-filter: blur(20px);
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 40px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+        nav strong { color: var(--ink); letter-spacing: 0.02em; }
+        a { color: #655b53; text-underline-offset: 3px; }
+        .eyebrow {
+            margin: 0 0 10px;
+            color: var(--taupe);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+        }
+        h1 {
+            margin: 0;
+            font-family: "Iowan Old Style", "Times New Roman", serif;
+            font-size: clamp(38px, 7vw, 62px);
+            font-weight: 500;
+            line-height: 1.08;
+        }
+        .lead {
+            max-width: 680px;
+            margin: 22px 0 40px;
+            color: var(--muted);
+            font-size: 18px;
+        }
+        section {
+            padding: 28px 0;
+            border-top: 1px solid var(--line);
+        }
+        h2 {
+            margin: 0 0 14px;
+            font-family: "Iowan Old Style", "Times New Roman", serif;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        h3 { margin: 24px 0 8px; font-size: 17px; }
+        p { margin: 10px 0; }
+        ol, ul { padding-left: 1.35em; }
+        li { margin: 8px 0; }
+        .notice {
+            padding: 18px 20px;
+            background: var(--soft);
+            border-radius: 18px;
+        }
+        footer {
+            width: min(100%, 860px);
+            margin: 22px auto 0;
+            color: var(--muted);
+            text-align: center;
+            font-size: 13px;
+        }
+        @media (max-width: 560px) {
+            body { padding: 14px 12px 36px; }
+            main { border-radius: 22px; }
+            nav { align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <nav>
+        <strong>PetCare Proof</strong>
+        <span>
+            <a href="petcareproof-privacy-en.html">Privacy Policy</a>
+            ·
+            <a href="petcareproof-support-zh.html" lang="zh-Hans">中文</a>
+        </span>
+    </nav>
+
+    <p class="eyebrow">SUPPORT</p>
+    <h1>Support</h1>
+    <p class="lead">
+        PetCare Proof helps in-home pet-care providers document service status,
+        photo sources, and locally generated reports that require human confirmation.
+    </p>
+
+    <section>
+        <h2>Quick start</h2>
+        <ol>
+            <li>Enter the pet name, client reference, and scheduled visit time;</li>
+            <li>Create the visit and begin documenting it;</li>
+            <li>Choose a status for feeding, water, cleaning, activity, and the environment check;</li>
+            <li>Optional: take a photo or add one using Apple's system photo picker;</li>
+            <li>After all required steps are recorded, open Review;</li>
+            <li>Review the on-device organized draft, then confirm it to create a report.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Frequently asked questions</h2>
+
+        <h3>Where are my records stored?</h3>
+        <p>Pet names, client references, tasks, photos, and reports are stored in the app's local directory. The current version has no account, cloud sync, or external client link.</p>
+
+        <h3>Why don't I see the camera option?</h3>
+        <p>The camera option is not shown in a simulator or on a device without an available camera. On a supported iPhone, choose to add a photo and then select “Take Photo.”</p>
+
+        <h3>How does the app access selected photos?</h3>
+        <p>PetCare Proof uses Apple's system photo picker and reads only the image you expressly select. Adding a photo is optional; you can continue documenting service status without one.</p>
+
+        <h3>Does the “AI-organized draft” assess pet health?</h3>
+        <p>No. The current version uses deterministic on-device rules to organize recorded tasks. It does not provide medical, veterinary, service-quality, liability, or authenticity assessments, and a person must review the draft.</p>
+
+        <h3>How do I delete data?</h3>
+        <p>You can delete or replace an individual photo from Capture. Select “Clear All Local Data” from Today to remove local photos, service records, and reports after confirmation. This action cannot be undone.</p>
+
+        <h3>Can deleted data be recovered?</h3>
+        <p>The app has no undo or server-recovery feature. If a device backup contains older app data, recovery depends on Apple's device backup mechanisms.</p>
+    </section>
+
+    <section>
+        <h2>Contact support</h2>
+        <div class="notice">
+            <p>Email: <a href="mailto:roik378@gmail.com">roik378@gmail.com</a></p>
+            <p>Operator: Liao Yilin</p>
+            <p>Use this address for privacy and support requests.</p>
+        </div>
+        <p>When reporting an issue, include the iPhone model, iOS version, PetCare Proof version, the affected screen, and reproduction steps that do not contain sensitive client or pet information.</p>
+    </section>
+</main>
+<footer>© 2026 Liao Yilin. All rights reserved.</footer>
+</body>
+</html>

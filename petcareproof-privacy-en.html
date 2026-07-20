@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetCare Proof privacy policy and local data handling details.">
+    <title>Privacy Policy - PetCare Proof</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --canvas: #f4f1ed;
+            --paper: rgba(255, 253, 250, 0.94);
+            --ink: #292725;
+            --muted: #6f6a65;
+            --taupe: #918477;
+            --line: #ddd6cf;
+            --soft: #ebe6e1;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 32px 18px 56px;
+            background:
+                radial-gradient(circle at 88% 5%, rgba(197, 184, 174, 0.34), transparent 30rem),
+                var(--canvas);
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+            line-height: 1.72;
+        }
+        main {
+            width: min(100%, 860px);
+            margin: 0 auto;
+            padding: clamp(26px, 5vw, 52px);
+            background: var(--paper);
+            border: 1px solid rgba(145, 132, 119, 0.22);
+            border-radius: 28px;
+            box-shadow: 0 24px 70px rgba(66, 58, 52, 0.10);
+            backdrop-filter: blur(20px);
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 40px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+        nav strong { color: var(--ink); letter-spacing: 0.02em; }
+        a { color: #655b53; text-underline-offset: 3px; }
+        .eyebrow {
+            margin: 0 0 10px;
+            color: var(--taupe);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+        }
+        h1 {
+            margin: 0;
+            font-family: "Iowan Old Style", "Times New Roman", serif;
+            font-size: clamp(38px, 7vw, 62px);
+            font-weight: 500;
+            line-height: 1.08;
+        }
+        .lead {
+            max-width: 680px;
+            margin: 22px 0 34px;
+            color: var(--muted);
+            font-size: 18px;
+        }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+        .meta span {
+            padding: 8px 12px;
+            background: var(--soft);
+            border-radius: 999px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+        section {
+            padding: 28px 0;
+            border-top: 1px solid var(--line);
+        }
+        h2 {
+            margin: 0 0 12px;
+            font-family: "Iowan Old Style", "Times New Roman", serif;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        p { margin: 10px 0; }
+        ul { padding-left: 1.35em; }
+        li { margin: 7px 0; }
+        .notice {
+            padding: 18px 20px;
+            background: var(--soft);
+            border-radius: 18px;
+        }
+        footer {
+            width: min(100%, 860px);
+            margin: 22px auto 0;
+            color: var(--muted);
+            text-align: center;
+            font-size: 13px;
+        }
+        @media (max-width: 560px) {
+            body { padding: 14px 12px 36px; }
+            main { border-radius: 22px; }
+            nav { align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <nav>
+        <strong>PetCare Proof</strong>
+        <span>
+            <a href="petcareproof-support-en.html">Support</a>
+            ·
+            <a href="petcareproof-privacy-zh.html" lang="zh-Hans">中文</a>
+        </span>
+    </nav>
+
+    <p class="eyebrow">PRIVACY POLICY</p>
+    <h1>Privacy Policy</h1>
+    <p class="lead">
+        PetCare Proof is an on-device tool for documenting in-home pet-care visits.
+        This policy explains how the app handles pet names, client references,
+        service records, photos, and reports.
+    </p>
+    <div class="meta">
+        <span>Effective: July 20, 2026</span>
+        <span>Operator: Liao Yilin</span>
+    </div>
+
+    <section>
+        <h2>1. We do not collect or upload app data</h2>
+        <p>The current version requires no account, connects to no production server, and contains no advertising, tracking, analytics, cloud AI, or third-party data-collection SDK.</p>
+        <p>The following content remains in the app's local sandbox and is not uploaded to or collected by us:</p>
+        <ul>
+            <li>Pet names, client references, and scheduled visit times;</li>
+            <li>Service-step status and notes entered by the user;</li>
+            <li>Photos captured or expressly selected by the user and their local file details;</li>
+            <li>Locally generated reports based on recorded steps and confirmed by a person.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. Camera and photo library</h2>
+        <p>The app requests camera access only after you choose to take a photo.</p>
+        <p>When adding an image from the photo library, PetCare Proof uses Apple's system photo picker and reads only the image you expressly select. The selected image is converted to a local JPEG and stored in the app sandbox as a source record for the relevant service step.</p>
+    </section>
+
+    <section>
+        <h2>3. On-device organization</h2>
+        <p>The “AI-organized draft” in this version is produced by deterministic rules on your device using only recorded task status and notes. It does not evaluate pet health, service quality, liability, or photo authenticity, and it does not send content to a cloud model. A user must review and confirm the draft before a local report version is created.</p>
+    </section>
+
+    <section>
+        <h2>4. Storage and system backups</h2>
+        <p>App data is stored in the app sandbox on your device. Depending on your device and Apple Account settings, iOS may include app data in an Apple-managed device or iCloud backup. We do not control or receive data from those system backups.</p>
+        <p>Deleting the app will generally remove its sandbox from the device. Data in system backups is handled according to Apple's backup settings and policies.</p>
+    </section>
+
+    <section>
+        <h2>5. Deleting data</h2>
+        <ul>
+            <li>Delete or replace an individual photo from Capture;</li>
+            <li>Select “Clear All Local Data” from Today and confirm the destructive action to delete locally stored photos, service records, and reports.</li>
+        </ul>
+        <p>The current version has no server account, so there is no server-side data-deletion request to submit.</p>
+    </section>
+
+    <section>
+        <h2>6. Data sharing and sale</h2>
+        <p>We do not sell, rent, or share local records stored in the app. The current version does not provide external client links or an outbound report-delivery feature.</p>
+    </section>
+
+    <section>
+        <h2>7. Children's privacy</h2>
+        <p>PetCare Proof is intended for adults who manage pet-care records. It is not directed to children and does not ask children to create an account or submit personal information.</p>
+    </section>
+
+    <section>
+        <h2>8. Security</h2>
+        <p>The app relies on iOS application sandboxing and system permission controls to isolate local data. No storage method can guarantee absolute security, so please protect access to your device and review your backup settings.</p>
+    </section>
+
+    <section>
+        <h2>9. Policy changes</h2>
+        <p>If a future version adds cloud AI, synchronization, client sharing, analytics, payments, or another feature that changes how data is handled, we will update this policy and the App Store privacy disclosure before that version is released.</p>
+    </section>
+
+    <section>
+        <h2>10. Contact us</h2>
+        <div class="notice">
+            <p>Operator: Liao Yilin</p>
+            <p>Email: <a href="mailto:roik378@gmail.com">roik378@gmail.com</a></p>
+            <p>Use this address for privacy and support requests.</p>
+        </div>
+    </section>
+</main>
+<footer>© 2026 Liao Yilin. All rights reserved.</footer>
+</body>
+</html>
