@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetCare Proof 隐私政策与本地数据处理说明。">
+    <title>隐私政策 - PetCare Proof</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --canvas: #f4f1ed;
+            --paper: rgba(255, 253, 250, 0.94);
+            --ink: #292725;
+            --muted: #6f6a65;
+            --taupe: #918477;
+            --line: #ddd6cf;
+            --soft: #ebe6e1;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 32px 18px 56px;
+            background:
+                radial-gradient(circle at 88% 5%, rgba(197, 184, 174, 0.34), transparent 30rem),
+                var(--canvas);
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+                "Segoe UI", sans-serif;
+            line-height: 1.72;
+        }
+        main {
+            width: min(100%, 860px);
+            margin: 0 auto;
+            padding: clamp(26px, 5vw, 52px);
+            background: var(--paper);
+            border: 1px solid rgba(145, 132, 119, 0.22);
+            border-radius: 28px;
+            box-shadow: 0 24px 70px rgba(66, 58, 52, 0.10);
+            backdrop-filter: blur(20px);
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 40px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+        nav strong { color: var(--ink); letter-spacing: 0.02em; }
+        a { color: #655b53; text-underline-offset: 3px; }
+        .eyebrow {
+            margin: 0 0 10px;
+            color: var(--taupe);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+        }
+        h1 {
+            margin: 0;
+            font-family: "Iowan Old Style", "Songti SC", serif;
+            font-size: clamp(38px, 7vw, 62px);
+            font-weight: 500;
+            line-height: 1.08;
+        }
+        .lead {
+            max-width: 680px;
+            margin: 22px 0 34px;
+            color: var(--muted);
+            font-size: 18px;
+        }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+        .meta span {
+            padding: 8px 12px;
+            background: var(--soft);
+            border-radius: 999px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+        section {
+            padding: 28px 0;
+            border-top: 1px solid var(--line);
+        }
+        h2 {
+            margin: 0 0 12px;
+            font-family: "Iowan Old Style", "Songti SC", serif;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        p { margin: 10px 0; }
+        ul { padding-left: 1.35em; }
+        li { margin: 7px 0; }
+        .notice {
+            padding: 18px 20px;
+            background: var(--soft);
+            border-radius: 18px;
+        }
+        footer {
+            width: min(100%, 860px);
+            margin: 22px auto 0;
+            color: var(--muted);
+            text-align: center;
+            font-size: 13px;
+        }
+        @media (max-width: 560px) {
+            body { padding: 14px 12px 36px; }
+            main { border-radius: 22px; }
+            nav { align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <nav>
+        <strong>PetCare Proof</strong>
+        <a href="petcareproof-support-zh.html">使用支持</a>
+    </nav>
+
+    <p class="eyebrow">PRIVACY POLICY</p>
+    <h1>隐私政策</h1>
+    <p class="lead">
+        PetCare Proof 是一款在设备本地记录上门宠物照护过程的工具。本政策说明
+        App 如何处理宠物名称、客户称呼、服务记录、照片和报告。
+    </p>
+    <div class="meta">
+        <span>生效日期：2026 年 7 月 20 日</span>
+        <span>运营主体：Liao Yilin</span>
+    </div>
+
+    <section>
+        <h2>1. 我们不收集或上传 App 数据</h2>
+        <p>当前版本不需要账户，不连接生产服务器，也不包含广告、追踪、分析、云端 AI 或第三方数据收集 SDK。</p>
+        <p>以下内容保存在 App 的本地沙盒中，不会由我们上传或收集：</p>
+        <ul>
+            <li>宠物名称、客户称呼与上门时间；</li>
+            <li>服务步骤状态与用户输入的备注；</li>
+            <li>用户拍摄或明确选择的照片及其本地文件信息；</li>
+            <li>根据已记录步骤生成并经人工确认的本地报告。</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. 相机与照片图库</h2>
+        <p>只有当你主动选择“拍照”时，App 才会请求使用相机。</p>
+        <p>从照片图库添加图片时，App 使用 Apple 的系统照片选择器，只读取你明确选择的图片。所选图片会转换为本地 JPEG，并保存在 App 沙盒内，用作对应服务步骤的记录来源。</p>
+    </section>
+
+    <section>
+        <h2>3. 本地整理功能</h2>
+        <p>“AI 整理草稿”在当前版本中由设备本地的确定性规则生成，只使用你已经记录的任务状态和备注。它不会判断宠物健康、服务质量、责任或照片真伪，也不会把内容发送到云端模型。草稿必须经过使用者人工检查和确认，才能生成本地报告版本。</p>
+    </section>
+
+    <section>
+        <h2>4. 保存与系统备份</h2>
+        <p>App 数据保存在设备的 App 沙盒中。根据你的设备与 Apple 账户设置，iOS 可能把 App 数据包含在由 Apple 管理的设备备份或 iCloud 备份中。我们不控制这些系统备份，也不会从中接收你的数据。</p>
+        <p>卸载 App 通常会移除设备上的 App 沙盒内容；系统备份中的处理方式由 Apple 的备份设置与政策决定。</p>
+    </section>
+
+    <section>
+        <h2>5. 删除数据</h2>
+        <ul>
+            <li>在 Capture 中删除或替换单张照片；</li>
+            <li>从 Today 页面选择“清除全部本地数据”，经破坏性确认后删除本机保存的照片、服务记录和报告。</li>
+        </ul>
+        <p>当前版本没有服务器账户，因此不需要向我们提交服务器数据删除请求。</p>
+    </section>
+
+    <section>
+        <h2>6. 数据共享与出售</h2>
+        <p>我们不出售、出租或共享 App 中的本地记录。当前版本没有客户外链或外部报告发送功能。</p>
+    </section>
+
+    <section>
+        <h2>7. 儿童隐私</h2>
+        <p>App 面向管理宠物照护记录的成年人，不以儿童为目标，也不要求儿童创建账户或提交个人信息。</p>
+    </section>
+
+    <section>
+        <h2>8. 安全</h2>
+        <p>App 依赖 iOS 提供的应用沙盒和系统权限控制来隔离本地数据。任何存储方式都无法保证绝对安全，请妥善管理设备访问权限和备份设置。</p>
+    </section>
+
+    <section>
+        <h2>9. 政策变更</h2>
+        <p>如果未来加入云端 AI、同步、客户分享、分析、支付或其他会改变数据处理方式的功能，我们会在相关版本发布前更新本政策和 App Store 隐私申报。</p>
+    </section>
+
+    <section>
+        <h2>10. 联系我们</h2>
+        <div class="notice">
+            <p>运营主体：Liao Yilin</p>
+            <p>Email：<a href="mailto:roik378@gmail.com">roik378@gmail.com</a></p>
+            <p>隐私与支持请求均可通过上述邮箱联系我们。</p>
+        </div>
+    </section>
+</main>
+<footer>© 2026 Liao Yilin. 保留所有权利。</footer>
+</body>
+</html>

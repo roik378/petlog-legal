@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetCare Proof 快速开始、常见问题与联系方式。">
+    <title>使用支持 - PetCare Proof</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --canvas: #f4f1ed;
+            --paper: rgba(255, 253, 250, 0.94);
+            --ink: #292725;
+            --muted: #6f6a65;
+            --taupe: #918477;
+            --line: #ddd6cf;
+            --soft: #ebe6e1;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 32px 18px 56px;
+            background:
+                radial-gradient(circle at 88% 5%, rgba(197, 184, 174, 0.34), transparent 30rem),
+                var(--canvas);
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+                "Segoe UI", sans-serif;
+            line-height: 1.72;
+        }
+        main {
+            width: min(100%, 860px);
+            margin: 0 auto;
+            padding: clamp(26px, 5vw, 52px);
+            background: var(--paper);
+            border: 1px solid rgba(145, 132, 119, 0.22);
+            border-radius: 28px;
+            box-shadow: 0 24px 70px rgba(66, 58, 52, 0.10);
+            backdrop-filter: blur(20px);
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 40px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+        nav strong { color: var(--ink); letter-spacing: 0.02em; }
+        a { color: #655b53; text-underline-offset: 3px; }
+        .eyebrow {
+            margin: 0 0 10px;
+            color: var(--taupe);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+        }
+        h1 {
+            margin: 0;
+            font-family: "Iowan Old Style", "Songti SC", serif;
+            font-size: clamp(38px, 7vw, 62px);
+            font-weight: 500;
+            line-height: 1.08;
+        }
+        .lead {
+            max-width: 680px;
+            margin: 22px 0 40px;
+            color: var(--muted);
+            font-size: 18px;
+        }
+        section {
+            padding: 28px 0;
+            border-top: 1px solid var(--line);
+        }
+        h2 {
+            margin: 0 0 14px;
+            font-family: "Iowan Old Style", "Songti SC", serif;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        h3 { margin: 24px 0 8px; font-size: 17px; }
+        p { margin: 10px 0; }
+        ol, ul { padding-left: 1.35em; }
+        li { margin: 8px 0; }
+        .notice {
+            padding: 18px 20px;
+            background: var(--soft);
+            border-radius: 18px;
+        }
+        footer {
+            width: min(100%, 860px);
+            margin: 22px auto 0;
+            color: var(--muted);
+            text-align: center;
+            font-size: 13px;
+        }
+        @media (max-width: 560px) {
+            body { padding: 14px 12px 36px; }
+            main { border-radius: 22px; }
+            nav { align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <nav>
+        <strong>PetCare Proof</strong>
+        <a href="petcareproof-privacy-zh.html">隐私政策</a>
+    </nav>
+
+    <p class="eyebrow">SUPPORT</p>
+    <h1>使用支持</h1>
+    <p class="lead">
+        PetCare Proof 帮助上门宠物照护人员按步骤保存服务状态、照片来源和经人工确认的本地报告。
+    </p>
+
+    <section>
+        <h2>快速开始</h2>
+        <ol>
+            <li>首次打开后，填写宠物名称、客户称呼和上门时间；</li>
+            <li>创建本次服务并开始记录；</li>
+            <li>为喂食、饮水、清洁、活动与环境检查选择状态；</li>
+            <li>可选：为对应步骤拍照或从系统照片选择器添加图片；</li>
+            <li>完成所有必需步骤后进入 Review；</li>
+            <li>检查本地整理草稿，再人工确认生成报告。</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>常见问题</h2>
+
+        <h3>我的记录保存在哪里？</h3>
+        <p>宠物名称、客户称呼、任务、照片和报告保存在 App 的本地目录。当前版本没有账户、云同步或客户外链。</p>
+
+        <h3>为什么看不到“拍照”？</h3>
+        <p>模拟器或没有可用相机的设备不会显示相机入口。真机上选择添加照片后，系统会在相机可用时显示“拍照”。</p>
+
+        <h3>App 如何访问我选择的照片？</h3>
+        <p>从图库添加图片时，App 使用 Apple 的系统照片选择器，只读取你明确选择的图片。你也可以不添加照片，继续记录服务状态。</p>
+
+        <h3>“AI 整理草稿”会判断宠物健康吗？</h3>
+        <p>不会。当前版本只在本机按确定性规则整理已经记录的任务，不提供医疗、兽医、质量、责任或真伪判断，并且必须人工审核。</p>
+
+        <h3>如何删除数据？</h3>
+        <p>在 Capture 中可以删除或替换单张照片。在 Today 页面选择“清除全部本地数据”，确认后会删除本机照片、服务记录和报告，且无法撤销。</p>
+
+        <h3>如何恢复已删除的数据？</h3>
+        <p>App 内没有撤销或服务器恢复功能。如果设备系统备份包含旧的 App 数据，恢复方式取决于 Apple 的设备备份机制。</p>
+    </section>
+
+    <section>
+        <h2>联系支持</h2>
+        <div class="notice">
+            <p>Email：<a href="mailto:roik378@gmail.com">roik378@gmail.com</a></p>
+            <p>运营主体：Liao Yilin</p>
+            <p>隐私与支持请求均可通过上述邮箱联系我们。</p>
+        </div>
+        <p>反馈时请附上 iPhone 型号、iOS 版本、PetCare Proof 版本、问题所在页面，以及不包含客户或宠物敏感内容的复现步骤。</p>
+    </section>
+</main>
+<footer>© 2026 Liao Yilin. 保留所有权利。</footer>
+</body>
+</html>
