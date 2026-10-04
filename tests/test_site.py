@@ -1,5 +1,6 @@
 from html.parser import HTMLParser
 from pathlib import Path
+import re
 import subprocess
 import unittest
 from urllib.parse import unquote, urlsplit
@@ -108,6 +109,14 @@ class SiteTests(unittest.TestCase):
         self.assertNotIn("url(", css)
         self.assertNotIn("vw", css)
         self.assertIn("letter-spacing: 0", css)
+
+    def test_reading_sizes_follow_the_root_font(self):
+        css = (ROOT / "support.css").read_text()
+        sizes = re.findall(r"font-size:\s*([^;]+);", css)
+        self.assertIn("100%", sizes)
+        self.assertTrue(all(size == "100%" or size.endswith("rem") for size in sizes), sizes)
+        self.assertIn(".documents a { line-height: 1.45; font-size: 1rem;", css)
+        self.assertIn(".documents { grid-template-columns: minmax(0, 1fr); }", css)
 
 
 if __name__ == "__main__":
