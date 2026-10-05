@@ -56,6 +56,13 @@ footer { padding: 24px 0; border-top: 1px solid var(--line); color: var(--muted)
 .contact { padding-top: 28px; }
 .contact h2 { font-size: 22px; margin-top: 0; }
 .contact p { max-width: 680px; font-size: 15px; color: var(--muted); }
+.support-title { display: flex; align-items: flex-start; gap: 16px; }
+.support-title > div { min-width: 0; }
+.support-title .product-icon { margin-top: 4px; }
+.support-title .eyebrow { margin-bottom: 4px; }
+.support-title h1 { margin-bottom: 0; }
+.support-title ~ section h2:focus-visible { outline: 3px solid #a62f5b; outline-offset: 4px; }
+.support-jump { justify-content: flex-start; gap: 4px 24px; padding: 12px 0; margin-bottom: 0; border-top: 1px solid var(--line); }
 [id] { scroll-margin-top: 24px; }
 @media (max-width: 620px) {
   main, .studio-nav, footer, .directory, .directory-page .studio-nav, .directory-page footer { width: calc(100% - 36px); }

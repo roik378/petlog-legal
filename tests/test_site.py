@@ -109,6 +109,37 @@ class SiteTests(unittest.TestCase):
         self.assertNotIn("vw", css)
         self.assertIn("letter-spacing: 0", css)
 
+    def test_petlog_support_has_complete_bilingual_routes(self):
+        for language, alternate in (("en", "zh"), ("zh", "en")):
+            with self.subTest(language=language):
+                name = f"petlog-support-{language}.html"
+                html = (ROOT / name).read_text()
+                page = Page(html)
+                self.assertIn(f"petlog-support-{alternate}.html", page.links)
+                for topic in ("records", "photos", "purchases", "privacy", "contact"):
+                    self.assertIn(topic, page.ids)
+                    self.assertIn(f"#{topic}", page.links)
+                self.assertEqual(page.images[0]["src"], "assets/petlog.png")
+                self.assertIn("Petmoni", " ".join(page.text))
+                self.assertIn("mailto:roik378@gmail.com?subject=PetLog%20Support", page.links)
+                self.assertIn(f'https://roik378.github.io/petlog-legal/{name}', html)
+                self.assertIn('hreflang="en"', html)
+                self.assertIn('hreflang="zh-Hans"', html)
+
+    def test_petlog_purchase_links_use_official_apple_help(self):
+        for language, locale in (("en", "en-us"), ("zh", "zh-cn")):
+            page = Page((ROOT / f"petlog-support-{language}.html").read_text())
+            self.assertIn(f"https://support.apple.com/{locale}/118428", page.links)
+            self.assertIn(f"https://support.apple.com/{locale}/118223", page.links)
+            self.assertNotIn("<form", (ROOT / f"petlog-support-{language}.html").read_text())
+
+    def test_existing_petlog_repository_landing_reaches_help(self):
+        readme = (ROOT / "README.md").read_text()
+        for language in ("en", "zh"):
+            url = f"https://roik378.github.io/petlog-legal/petlog-support-{language}.html"
+            self.assertIn(url, readme)
+            self.assertLess(readme.index(url), readme.index("## Maintainer Checks"))
+
 
 if __name__ == "__main__":
     unittest.main()
